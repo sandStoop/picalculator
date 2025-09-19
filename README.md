@@ -1,6 +1,6 @@
 # The first interactive GNU bc Pi calculation software
 
-**Put your computation to Pi!**. This is GNU bc geek software used to calculate Pi with a few algorithms and with the decimal amount you want. It's extremely fitting to GNU bc's limitations and problems.
+**Put your computation to Pi!** This is GNU bc geek software used to calculate Pi with a few algorithms and with the decimal amount you want. It's extremely fitting to GNU bc's limitations and problems.
 
 ## The Bad
 
