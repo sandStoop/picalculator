@@ -1,0 +1,38 @@
+# pi-calculator
+# pi-calculator is a GNU bc script aiming to put your computing power to calculate digits of Pi in any way that you want!
+
+# main
+define picalculator () {
+  auto digits, method, scaleholder, version
+
+  version = 1.0
+  
+  print "pi-calculator ", version, "\n"
+  print "Interactive GNU bc pi calculator", "\n"
+  
+  print "Enter the amount of digits that will be calculated: ", "\n"
+  digits = read() 
+  
+  print "Pi Algorithm Methods", "\n"
+  print "[1] Arctangent Method", "\n"
+  method = read()
+
+  scaleholder = scale # Puts the actual scale in another variable to reassign later
+  scale = digits # The Pi scale (that will be changed in the end) is the decimal digit amount of Pi
+
+  if(method == 1) {
+    if (digits == 2) {
+      pi = 3.14 # Fix the Pi(e) edge case
+    } else {
+      pi = 4*a(1) # Make the Pi(e)!
+    }
+  } else {
+   halt # Friendlier methods aren't really possible nor easy since GNU bc is NOT a programming language
+  }
+
+  scale = scaleholder # Return the scale back to normal
+  return pi # Return pi
+}
+
+  
+
